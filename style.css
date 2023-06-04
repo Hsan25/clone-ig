@@ -421,7 +421,7 @@ a {
 
 .notif .slider-down {
   width: 100%;
-  height: 600px;
+  max-height: 85vh;
   padding: 10px;
   overflow: auto;
 }
