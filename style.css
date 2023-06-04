@@ -21,6 +21,11 @@
  
 }
 
+html{
+  -webkit-tap-highlight-color: transparent;
+  
+}
+
 body {
   font-family: "Poppins", sans-serif;
 
@@ -41,11 +46,11 @@ body {
   background-color: var(--black);
   color: var(--white);
   display: flex;
-  padding: 10px;
+  padding: 15px 10px 10px; 
   align-items: center;
   z-index: 9999;
-  left: 0;
-  right: 0;
+  /* left: 0;
+  right: 0; */
 }
 .nav-top .logo {
   width: 60%;
@@ -54,12 +59,24 @@ body {
   width: max-content;
   font-family: "Cookie", cursive;
   font-size: 30px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  padding-left: 5px;
+  
 }
 .nav-top .logo h1 span {
   position: relative;
   top: 10px;
-  left: -7px;
+  left: -5px;
+  display: inline-block;
+  max-height: 20px;
+}
+
+
+.nav-top .logo a{
+  width: max-content;
+  display: inline-block;
+  overflow: hidden;
 }
 .nav-top ul {
   width: 40%;
@@ -72,12 +89,16 @@ body {
 .nav-top a {
   text-decoration: none;
   color: var(--white);
-  
+
 }
-/* .nav-top .logo a:active{
-    color: yellow;
-    
-} */
+
+/* for link */
+a{
+  user-select: none;
+  background-color: transparent;
+}
+
+
 
 /* logo click */
 .logo-click {
@@ -106,6 +127,8 @@ body {
   left: 28px;
 }
 
+
+
 .logo-click.active {
   transform: scaleY(1);
 }
@@ -118,9 +141,10 @@ body {
   width: 100%;
   background-color: var(--black);
   bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
+  
+  /* left: 0;
+  right: 0; */
+  z-index: 9999;
 }
 
 .nav-bottom ul {
@@ -150,14 +174,16 @@ body {
 /* slider status */
 
 .slider-status {
-  height: 85px;
+  height: 100px;
   border-bottom: 1px solid var(--gray);
-  padding: 5px 7px;
+  padding: 0 10px 5px;
   background-color: var(--black);
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
   gap: 15px;
+  align-items: center;
+  position: relative;
 }
 .slider-status::-webkit-scrollbar{
     width: 0;
@@ -165,14 +191,14 @@ body {
 }
 
 .card-tambah{
-    min-width: 55px;
-    width: 55px;
-    height: 55px;
-    min-height: 55px;
+    min-width: 65px;
+    width: 65px;
+    height: 65px;
+    min-height: 65px;
     border-radius: 50%;
     background-color: var(--black);
     border: 1px solid var(--gray);
-    color: #fff;
+    color: var(--white);
     position: relative;
 }
 .card-tambah::after{
@@ -197,14 +223,14 @@ body {
     text-align: center;
     display: inline-block;
     position: absolute;
-    bottom: -20px;
+    bottom: -22px;
 }
 
 .slider-status .card {
-  min-width: 55px;
-  width: 55px;
-  height: 55px;
-  min-height: 55px;
+  min-width: 70px;
+  width: 70px;
+  height: 70px;
+  min-height: 70px;
   border-radius: 50%;
   background: linear-gradient(var(--black), var(--black)) padding-box,
    var(--gradasi) border-box;
@@ -225,8 +251,8 @@ body {
 }
 
 .slider-status .card img {
-  width: 47px;
-  height: 47px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 
@@ -237,7 +263,7 @@ body {
 .container{
     width: 100%;
     background-color: var(--black);
-
+    position: relative;
 }
 
 .container .content-card .header-card{
@@ -253,7 +279,8 @@ body {
     display: inline-block;
     position: absolute;
     left: 50px;
-    font-size: 10px;
+    font-size: .8rem;
+    
 }
 
 .container .content-card .header-card a{
@@ -299,7 +326,7 @@ body {
     color: var(--white);
     position: absolute;
     top: 30px;
-    font-size:10px ;
+    font-size:.8rem ;
     font-weight: 400;
 }
 .content-card .content-description .icons .icons-left{
@@ -311,7 +338,7 @@ body {
 
 .content-card .content-description .text{
     color: var(--white);
-    font-size: 12px;
+    font-size: .8rem;
     padding-top:20px ;
     width: 100%;
 }
@@ -319,14 +346,14 @@ body {
     display: inline;
 }
 .user{
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .content-card .comment .showComment{
     padding: 10px;
     text-decoration: none;
     color: var(--gray);
-    font-size: 12px;
+    font-size: .8rem;
 }
 .content-card .comment .box-comment{
     padding: 10px;
@@ -344,5 +371,6 @@ body {
 
 .content-card .comment .box-comment .card-comment .text-comment p{
     display: inline;
+
 }
 
