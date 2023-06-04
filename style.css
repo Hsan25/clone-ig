@@ -18,7 +18,6 @@
   border: none;
   list-style: none;
   text-decoration: none;
- 
 }
 
 html{
@@ -28,8 +27,7 @@ html{
 
 body {
   font-family: "Poppins", sans-serif;
-
-
+  background-color: var(--black);
 }
 
 /* icon */
@@ -134,12 +132,15 @@ a{
 /* nav bottom */
 
 .nav-bottom {
-  position: sticky;
-  height: 52px;
+  position: fixed;
+  height: 55px;
   width: 100%;
   background-color: var(--black);
   bottom: 0;
   z-index: 999;
+  left:0;
+  border-top: 1px solid var(--gray);
+  
 }
 
 .nav-bottom ul {
@@ -258,6 +259,7 @@ a{
 .container{
     width: 100%;
     background-color: var(--black);
+
 
 }
 
