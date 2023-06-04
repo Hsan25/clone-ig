@@ -132,7 +132,8 @@ a{
 /* nav bottom */
 
 .nav-bottom {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   height: 55px;
   width: 100%;
   background-color: var(--black);
