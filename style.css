@@ -49,8 +49,7 @@ body {
   padding: 15px 10px 10px; 
   align-items: center;
   z-index: 9999;
-  /* left: 0;
-  right: 0; */
+
 }
 .nav-top .logo {
   width: 60%;
@@ -141,10 +140,7 @@ a{
   width: 100%;
   background-color: var(--black);
   bottom: 0;
-  
-  /* left: 0;
-  right: 0; */
-  z-index: 9999;
+  z-index: 999;
 }
 
 .nav-bottom ul {
@@ -263,7 +259,7 @@ a{
 .container{
     width: 100%;
     background-color: var(--black);
-    position: relative;
+
 }
 
 .container .content-card .header-card{
