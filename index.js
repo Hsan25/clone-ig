@@ -57,7 +57,7 @@ let x = null
 hamburger.forEach((a, i) => {
   // buat identitas setiap element
   a.setAttribute("data-index", i);
-  
+
   a.addEventListener("click", function (e) {
     e.preventDefault();
     boxHamburger.classList.toggle("active");
@@ -96,7 +96,7 @@ document.addEventListener("click", (e) => {
       if(!x){
         return
       }
-      if(!hamburger[x].contains(e.target) && !boxHamburger.contains(e.target)){
+      if(!hamburger[x].contains(e.target) && boxHamburger.contains(e.target)){
         boxHamburger.classList.remove("active");
       }
     })();
