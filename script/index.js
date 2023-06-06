@@ -82,7 +82,7 @@ document.addEventListener("click", (e) => {
   // close boxLogo
   if (!logo.contains(e.target) && !boxLogo.contains(e.target)) {
     boxLogo.classList.remove("active");
-    console.log("logo");
+
   }
 
   // close boxPlus
