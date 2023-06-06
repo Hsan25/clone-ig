@@ -148,7 +148,7 @@ a {
   width: 100%;
   background-color: var(--black);
   bottom: 0;
-  z-index: 99;
+  z-index: 991;
   left: 0;
   border-top: 1px solid var(--gray);
 }
