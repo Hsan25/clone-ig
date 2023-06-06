@@ -39,9 +39,7 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--gray);
-  /* position: sticky;
-  top: 0;
-  z-index: 999; */
+ 
 }
 
 .box-search.sticky{
@@ -52,7 +50,7 @@ body {
 
 .box-search .wrapper-search {
   width: 100%;
-  padding: 2px 10px;
+  padding: 0 10px;
   display: flex;
   align-items: center;
   background-color: #454545;
@@ -89,7 +87,7 @@ body {
   color: white;
   padding: 5px;
   padding-right: 10px;
-  font-size: 15px;
+  font-size: 13px;
   transition: 0.3s;
 }
 
