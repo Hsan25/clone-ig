@@ -225,21 +225,14 @@ body {
   background-color: var(--black);
   color: var(--white);
   padding: 10px;
-  transition: 0.3s;
   z-index: 99;
   height: 92vh;
-  position: absolute;
-  top: -1000px;
-  transition: .2s;
-  /* transform: scaleX(0); */
   display: none;
   
 }
 
 .search-result.active{
   display: block;
-  /* transform: scaleX(1); */
-  top: 0;
   position: relative;
 }
 
