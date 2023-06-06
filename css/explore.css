@@ -28,6 +28,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--black);
   overflow-x: hidden;
+  height: auto;
 }
 
 /* box search */
