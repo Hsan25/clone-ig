@@ -1,0 +1,127 @@
+:root {
+  --black: #000000;
+  --gray: #454545;
+  --white: #fff;
+  --gradasi: linear-gradient(
+    90deg,
+    rgba(255, 185, 42, 1) 26%,
+    rgba(191, 17, 38, 1) 53%,
+    rgba(255, 0, 219, 1) 100%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--black);
+  overflow-x: hidden;
+}
+
+.box-inbox {
+  width: 100%;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10px;
+}
+
+.box-inbox a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+.box-inbox .header-inbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  border-bottom: 1px solid var(--gray);
+  background-color: var(--black);
+}
+
+.box-inbox .header-inbox h1 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+.box-inbox .content {
+  width: 100%;
+  padding: 10px;
+}
+
+
+.content .card-content {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.content .card-content .circle {
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.content .card-content .circle span {
+  position: relative;
+  left: 5px;
+}
+
+.content .card-content .circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.box-inbox .card-content .circle .icon {
+  transform: scale(0.9);
+}
+.box-inbox .card-content a {
+  text-align: center;
+  align-items: center;
+  display: inline-flex;
+  width: 100%;
+}
+
+.content .card-content .text-content {
+  width: 100%;
+  font-size: 12px;
+  display: inline-block;
+  text-align: start;
+  padding-left: 10px;
+}
+
+.content .card-content .text-content span {
+  font-weight: 500;
+  font-size: 14px;
+}
+.content .card-content .text-content p {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.size-1 {
+  font-size: 12px;
+  font-weight: 600;
+}
