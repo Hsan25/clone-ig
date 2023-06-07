@@ -29,6 +29,7 @@ body {
   background-color: var(--black);
   overflow-x: hidden;
   /* height: auto; */
+  /* height: 200vh; */
 }
 
 /* box search */
@@ -102,10 +103,10 @@ body {
 .container{
   width: 100%;
   background-color: var(--black);
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .container.none{
