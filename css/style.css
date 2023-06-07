@@ -163,9 +163,9 @@ a {
 .nav-bottom ul a {
   color: var(--white);
 }
-.nav-bottom li .icon {
+/* .nav-bottom li .icon {
   transform: scale(1);
-}
+} */
 .nav-bottom li .icon.active {
   fill: var(--white);
   color: black;
