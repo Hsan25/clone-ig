@@ -28,6 +28,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--black);
   overflow-x: hidden;
+
 }
 
 /* icon */
@@ -380,9 +381,11 @@ a {
   transition: 0.3s;
   z-index: 99;
   height: 92vh;
+  transform: scaleY(0);
 }
 
 .notif.active {
+  transform: scaleY(1);
   position: relative;
   right: 0;
 }
