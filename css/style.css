@@ -382,6 +382,7 @@ a {
   z-index: 99;
   height: 92vh;
   transform: scaleY(0);
+  padding-bottom: 55px;
 }
 
 .notif.active {
