@@ -376,6 +376,7 @@ a {
 }
 .box-akun .wrapper .wrapper-text a {
   color: var(--blue);
+  font-size: .9rem;
 }
 
 
