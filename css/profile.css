@@ -14,7 +14,9 @@
   --gray-3:#444d56;
   --gray-4:#8D949E;
   --blue-2:#0066ff;
+  --size-1:scale(.8);
 }
+
 
 * {
   margin: 0;
@@ -51,8 +53,12 @@ a {
 .size-2{
     transform: scale(.7);
 }
+
 .size-1{
     transform: scale(.8);
+}
+.size-3{
+    transform: scale(.8) translateY(7px);
 }
 
 /* for btn primary */
@@ -74,9 +80,10 @@ a {
 .content-1{
     width: 100%;
     padding: 2.5rem 1.5rem 0;
+    background-color: var(--black);
 }
 
-.content-1 .header{
+ .header{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -85,11 +92,12 @@ a {
     justify-content: flex-start;
     position: fixed;
     top: 0;
-    z-index: 99;
-    padding: .5rem 0;
+    z-index: 999;
+    padding: .5rem 0 .5rem 1rem;
 }
 
-.content-1 .header .name{
+ .header .name{
+    
     width: 70%;
     font-size: 1rem;
     font-weight: 500;
@@ -101,7 +109,7 @@ a {
 
 
 
-.content-1 .header .icons{
+ .header .icons{
     width: 30%;
     display: flex;
     justify-content: center;
@@ -128,7 +136,7 @@ a {
     border-radius: 50%;
 }
 .content-1 .info-user .img-user > span{
-    font-size: .7rem;
+    font-size: .8rem;
     font-weight: 500;
 }
 
@@ -152,12 +160,12 @@ a {
 .content-1 .info-user .info .total-mengikuti{
     text-align: center;
     font-weight: 500;
-    font-size: .9rem;
+    font-size: 1.1rem;
 }
 .content-1 .info-user .info .postingan-total > span:nth-child(2) ,
 .content-1 .info-user .info .pengikut-total > span:nth-child(2) ,
 .content-1 .info-user .info .mengikuti-total > span:nth-child(2) {
-    font-size: .7rem;
+    font-size: .8rem;
     display: inline-block;
 }
 
@@ -379,3 +387,55 @@ a {
     border-radius: 50%;
     border: 2px solid var(--white);
   }
+
+
+
+/* modal menu start */
+
+.modal-menu{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    position:fixed;
+    bottom: 0;
+    /* display: none; */
+    transform: scale(0);
+    /* transition: .3s; */
+}
+
+.modal-menu.active{
+    transform: scale(1);
+    /* display: block; */
+    z-index: 9999;
+}
+
+.modal-menu .wrapper-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    background-color: var(--gray);
+    padding: 1rem 0 0;
+    border-radius: 10px 10px 0 0;
+    position: fixed;
+    bottom: -100%;
+    z-index: 9999;
+    transition: .3s;
+}
+
+.modal-menu.active .wrapper-menu{
+    bottom: 0;
+}
+
+.modal-menu .wrapper-menu a {
+    padding: 0 0 0 .7rem ;
+    display: inline-block;
+    width: 100%;
+    height: 2.5rem;
+    /* line-height: 2.5rem ; */
+    /* font-size: .9rem; */
+
+}
+
+.modal-menu .wrapper-menu a:hover{
+    background-color: var(--gray-2);
+}

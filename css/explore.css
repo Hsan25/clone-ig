@@ -123,7 +123,9 @@ body {
   width: 50%;
   /* min-width: 50%; */
   height: 50%;
-  border: 1px solid rgba(0,0,0);
+  /* border: 1px solid rgba(0,0,0); */
+  border-bottom: 1px solid rgba(0,0,0);
+  border-right: 1px solid rgba(0,0,0);
   
 }
 .container .content-item:nth-child(odd) .card-left .card-item img{
@@ -142,7 +144,8 @@ body {
 .container .content-item:nth-child(odd) .card-right .card-item{
   min-width: 100px;
   max-width: 100%;
-  border: 1px solid rgba(0,0,0);
+  border-bottom: 1px solid rgba(0,0,0);
+  border-right: 1px solid rgba(0,0,0);
 
 }
 .container .content-item:nth-child(odd) .card-right .card-item img{
@@ -174,7 +177,8 @@ body {
   width: 50%;
   /* min-width: 50%; */
   height: 50%;
-  border: 1px solid rgba(0,0,0);
+  border-bottom: 1px solid rgba(0,0,0);
+  border-right: 1px solid rgba(0,0,0);
   
 }
 .container .content-item:nth-child(even) .card-left .card-item img{
@@ -194,7 +198,8 @@ body {
 .container .content-item:nth-child(even) .card-right .card-item{
   min-width: 100px;
   max-width: 100%;
-  border: 1px solid rgba(0,0,0);
+  border-bottom: 1px solid rgba(0,0,0);
+  border-right: 1px solid rgba(0,0,0);
 
 }
 .container .content-item:nth-child(even) .card-right .card-item img{

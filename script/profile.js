@@ -18,4 +18,25 @@ btnTags.addEventListener("click", (e) => {
     boxPost.classList.add("none");
     btnPost.classList.remove("border");
     btnTags.classList.add("border");
+});
+
+
+
+// toggle menu
+
+const btnMenu = document.querySelector(".btn-menu");
+const boxMenu = document.querySelector(".modal-menu");
+const wrapperMenu = document.querySelector(".wrapper-menu");
+
+btnMenu.addEventListener("click", (e) => {
+    e.preventDefault();
+    boxMenu.classList.toggle("active");
+});
+
+
+
+document.addEventListener("click", (e) => {
+    if(boxMenu.contains(e.target) && !wrapperMenu.contains(e.target) ){
+        boxMenu.classList.remove("active");
+    }
 })

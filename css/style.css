@@ -1,6 +1,6 @@
 :root {
   --black: #000000;
-  --gray: #454545;
+  --gray: #242526;
   --white: #fff;
   --gradasi: linear-gradient(
     90deg,
@@ -8,6 +8,12 @@
     rgba(191, 17, 38, 1) 53%,
     rgba(255, 0, 219, 1) 100%
   );
+  --blue: rgb(0, 149, 246);
+  --gray-1: #65676b;
+  --gray-2: #323436;
+  --gray-3:#444d56;
+  --gray-4:#8D949E;
+  --blue-2:#0066ff;
 }
 
 * {
