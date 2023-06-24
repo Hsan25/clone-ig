@@ -10,7 +10,11 @@
   );
   --blue: rgb(0, 149, 246);
   --gray-1: #65676b;
-  /* --gray-2:#242526; */
+  --gray-2: #323436;
+  --gray-3: #444d56;
+  --gray-4: #8d949e;
+  --blue-2: #0066ff;
+  --size-1: scale(0.8);
 }
 
 * {
@@ -143,7 +147,7 @@ a {
 .content .card-content .text-content p {
   font-size: 13px;
   font-weight: 500;
-  color: var(--gray);
+  color: var(--gray-1);
 }
 
 .size-1 {
