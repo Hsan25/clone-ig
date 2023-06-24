@@ -322,7 +322,7 @@ a {
   height: max-content;
   padding: 30px 10px 10px;
   border-radius: 10px 10px 0 0;
-  position: absolute;
+  position: fixed;
   bottom: -1000px;
   transition: 0.3s;
 }
@@ -378,5 +378,6 @@ a {
   color: var(--blue);
   font-size: .9rem;
 }
+
 
 

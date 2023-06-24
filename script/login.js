@@ -47,7 +47,7 @@ document.addEventListener("click", (e) => {
 const showBox = document.querySelector(".show-box-login");
 const boxLogin = document.querySelector(".box-login");
 // const wrapperLogin = document.querySelector()
-const x = boxLogin.children[0]//.wrapper
+const xy = boxLogin.children[0]//.wrapper
 showBox.addEventListener("click", (e) => {
     e.preventDefault();
     boxLogin.classList.add("active");
@@ -55,7 +55,7 @@ showBox.addEventListener("click", (e) => {
 });
 
 document.addEventListener("click", (e) => {
-    if(!showBox.contains(e.target) && !x.contains(e.target)){
+    if(!showBox.contains(e.target) && !xy.contains(e.target)){
         boxLogin.classList.remove("active");
     }
 })
